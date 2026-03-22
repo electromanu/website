@@ -1,0 +1,32 @@
+<header>
+<nav id="mainNav">
+    <a href="{{ url_for('home') }}" class="log">
+        <div class="logoo"><img src="{{url_for('static',filename='image/TFS.jpg')}}" alt="TFS Logo"></div>
+        <div class="logo">Trimurti <span>Facility</span> Services</div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="{{ url_for('home') }}#services">Services</a></li>
+        <li><a href="{{ url_for('home') }}#about">About</a></li>
+        <li><a href="{{ url_for('home') }}#testimonials">Testimonials</a></li>
+        <li><a href="{{ url_for('home') }}#gallery">Gallery</a></li>
+        <li><a href="{{ url_for('home') }}#team">Team</a></li>
+        <li><a href="{{ url_for('home') }}#contact" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="mobile-menu" onclick="toggleNav()" aria-label="Menu">
+        <i class="fas fa-bars" id="menuIcon"></i>
+    </button>
+</nav>
+</header>
+
+<script>
+function toggleNav(){
+    const nav = document.getElementById('nav-links');
+    const icon = document.getElementById('menuIcon');
+    nav.classList.toggle('active');
+    icon.className = nav.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+}
+window.addEventListener('scroll', function(){
+    const nav = document.getElementById('mainNav');
+    nav.style.boxShadow = window.scrollY > 30 ? '0 4px 24px rgba(15,25,35,0.10)' : 'none';
+});
+</script>

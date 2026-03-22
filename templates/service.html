@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Trimurti Facility Services</title>
+    <meta name="description" content="Explore all facility management services by Trimurti — plumbing, security, housekeeping, pool maintenance, electrical, garden, STP, pest control and facility management.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+{% include "header.html" %}
+
+<!-- PAGE HERO -->
+<section class="service-page-hero">
+    <div class="breadcrumb">
+        <a href="{{ url_for('home') }}">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Services</span>
+    </div>
+    <h1>Our Services</h1>
+    <p>Comprehensive facility management solutions for residential, commercial and industrial properties across Karnataka.</p>
+    <a href="{{ url_for('home') }}#contact" class="btn" style="background:var(--accent);color:var(--primary);border-color:var(--accent);">Get a Free Quote <i class="fas fa-arrow-right"></i></a>
+</section>
+
+
+<!-- FACILITY MANAGER -->
+<section class="service-section" id="manager">
+    <div class="service-section-img">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Facility Manager">
+        <div class="img-badge"><i class="fas fa-user-tie"></i><span>Expert Managers</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Operations</span>
+        <h2>Facility Manager</h2>
+        <p>A Facility Manager plays a vital role in ensuring the smooth operation, maintenance, and supervision of all services within a property or organization. Our managers bring structure, accountability, and efficiency to every site.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Supervising daily facility operations</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Coordinating housekeeping, security and maintenance teams</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Monitoring building systems and infrastructure</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Managing vendor services and service schedules</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Ensuring safety and regulatory compliance</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Client coordination and detailed reporting</li>
+        </ul>
+        <div class="service-note">Proper facility management ensures efficient operations, cost control, improved safety standards, and a well-maintained environment that enhances property value.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- SECURITY -->
+<section class="service-section reverse" id="security">
+    <div class="service-section-img">
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80" alt="Security Services">
+        <div class="img-badge"><i class="fas fa-shield-alt"></i><span>24/7 Security</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Safety & Access</span>
+        <h2>Security Services</h2>
+        <p>Security is a critical component of any facility. Our trained security personnel ensure the safety of people, property, and assets around the clock with zero compromises.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Access control and visitor monitoring</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Security patrol and CCTV surveillance</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Protection of property and equipment</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Crowd management for events</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Emergency response assistance</li>
+        </ul>
+        <div class="service-note">Professional security prevents theft, vandalism, and unauthorized access while maintaining a safe environment for all.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- HOUSEKEEPING -->
+<section class="service-section" id="housekeeping">
+    <div class="service-section-img">
+        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80" alt="Housekeeping Services">
+        <div class="img-badge"><i class="fas fa-broom"></i><span>Spotless Spaces</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Cleaning</span>
+        <h2>Housekeeping</h2>
+        <p>A clean and hygienic environment is essential for health, productivity, and comfort. Our housekeeping staff is trained to maintain the highest standards of cleanliness in all facility types.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Floor cleaning and surface maintenance</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Office and workspace deep cleaning</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Washroom sanitation and hygiene</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Waste collection and disposal</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Periodic deep cleaning services</li>
+        </ul>
+        <div class="service-note">Regular housekeeping ensures hygienic, presentable spaces creating a positive impression for all occupants and visitors.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- POOL -->
+<section class="service-section reverse" id="pool">
+    <div class="service-section-img">
+        <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80" alt="Pool Maintenance">
+        <div class="img-badge"><i class="fas fa-swimming-pool"></i><span>Crystal Clear Water</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Aqua Management</span>
+        <h2>Pool Maintenance</h2>
+        <p>Swimming pool maintenance is essential to ensure clean, safe, and hygienic water conditions while maintaining the overall functionality of pool systems year-round.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Regular water quality testing and chemical balancing</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Cleaning of pool floors, walls, and tiles</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Filter, pump, and circulation system inspection</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Debris removal and surface skimming</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Water level monitoring and refilling</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Minor repairs and preventive maintenance</li>
+        </ul>
+        <div class="service-note">Proper pool care prevents algae growth, extends equipment lifespan, and enhances property value.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- ELECTRICAL -->
+<section class="service-section" id="electrical">
+    <div class="service-section-img">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80" alt="Electrical Services">
+        <div class="img-badge"><i class="fas fa-bolt"></i><span>Licensed Electricians</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Electrical</span>
+        <h2>Electrical Services</h2>
+        <p>Electrical systems require regular monitoring and maintenance to ensure safety and uninterrupted operations. Our licensed electricians are trained for all types of facilities.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Electrical installation and maintenance</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Lighting system setup and maintenance</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Power distribution system inspection</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Electrical fault detection and repair</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Preventive electrical maintenance schedules</li>
+        </ul>
+        <div class="service-note">Our certified electricians ensure all systems function safely, efficiently, and in compliance with safety standards.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- GARDEN -->
+<section class="service-section reverse" id="garden">
+    <div class="service-section-img">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80" alt="Garden Maintenance">
+        <div class="img-badge"><i class="fas fa-leaf"></i><span>Beautiful Landscapes</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Landscaping</span>
+        <h2>Garden Maintenance</h2>
+        <p>A well-maintained garden enhances the appearance of any property and creates a pleasant environment for all occupants. Our expert team handles everything from lawn care to full landscaping.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Garden design and routine maintenance</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Lawn mowing and plant care</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Tree trimming and landscaping</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Watering systems and fertilization</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Seasonal plant maintenance</li>
+        </ul>
+        <div class="service-note">Green, well-maintained landscapes improve the overall atmosphere and increase the perceived value of any property.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- STP -->
+<section class="service-section" id="stp">
+    <div class="service-section-img">
+        <img src="{{url_for('static',filename='image/stp.jpeg')}}" alt="STP Maintenance">
+        <div class="img-badge"><i class="fas fa-water"></i><span>Certified Operators</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Wastewater</span>
+        <h2>STP Maintenance Operator</h2>
+        <p>Sewage Treatment Plant (STP) maintenance is essential for managing wastewater efficiently and maintaining environmental safety in residential and commercial complexes.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Full STP operations monitoring</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Equipment maintenance and inspection</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Water treatment process management</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Compliance with environmental standards</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Regular reporting and documentation</li>
+        </ul>
+        <div class="service-note">Proper STP management ensures effective wastewater treatment, prevents environmental pollution, and meets all regulatory requirements.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- PEST CONTROL -->
+<section class="service-section reverse" id="pest">
+    <div class="service-section-img">
+        <img src="https://content3.jdmagicbox.com/v2/comp/delhi/37/011pg001137/catalogue/indian-pest-control-and-fumigation-co-kalu-sarai-sarvapriya-vihar-delhi-pre-construction-pest-control-services-nebnvls2ft.jpg" alt="Pest Control Services">
+        <div class="img-badge"><i class="fas fa-bug"></i><span>Safe & Effective</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Pest Management</span>
+        <h2>Pest Control Services</h2>
+        <p>Pests such as termites, cockroaches, mosquitoes, and rodents cause health risks and property damage. Our certified pest control team eliminates infestations safely and permanently.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Termite treatment and prevention</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Cockroach and mosquito control</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Rodent control and exclusion</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Safe sanitization treatments</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Preventive scheduled treatments</li>
+        </ul>
+        <div class="service-note">Professional pest control ensures a clean, safe, and pest-free environment for all residential and commercial facilities.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- PLUMBING -->
+<section class="service-section" id="plumbing">
+    <div class="service-section-img">
+        <img src="{{url_for('static',filename='image/plumbing.jpeg')}}" alt="Plumbing Services">
+        <div class="img-badge"><i class="fas fa-faucet"></i><span>Certified Plumbers</span></div>
+    </div>
+    <div class="service-section-content">
+        <span class="section-tag">Plumbing</span>
+        <h2>Plumbing Services</h2>
+        <p>Our professional plumbing services ensure the smooth functioning of water supply and drainage systems within all types of buildings — from residential apartments to large commercial complexes.</p>
+        <ul class="service-list">
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Installation and repair of water pipelines</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Leak detection and emergency repair</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Drainage system maintenance</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Bathroom and kitchen plumbing</li>
+            <li><div class="check-icon"><i class="fas fa-check"></i></div>Water tank inspection and servicing</li>
+        </ul>
+        <div class="service-note">Timely plumbing maintenance prevents costly water damage and ensures efficient water management throughout the facility.</div>
+        <a href="{{ url_for('home') }}#contact" class="btn btn-sm" style="margin-top:1.5rem;">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+
+<!-- CTA BANNER -->
+<section style="background:var(--primary);padding:70px 6%;text-align:center;">
+    <h2 style="color:var(--white);font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:1rem;">Ready to Get Started?</h2>
+    <p style="color:rgba(255,255,255,.65);max-width:500px;margin:0 auto 2rem;font-size:1rem;">Contact us today for a free consultation and customized facility management quote.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="{{ url_for('home') }}#contact" class="btn" style="background:var(--accent);color:var(--primary);border-color:var(--accent);">Get a Free Quote <i class="fas fa-arrow-right"></i></a>
+        <a href="https://wa.me/919663261788" class="btn btn-outline" style="border-color:rgba(255,255,255,.3);color:var(--white);" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Trimurti Facility Services</h4>
+            <p>Professional facility management solutions for residential, commercial, and industrial properties since 2010.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#plumbing">Plumbing</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#housekeeping">Housekeeping</a></li>
+                <li><a href="#pool">Pool Maintenance</a></li>
+                <li><a href="#electrical">Electrical</a></li>
+                <li><a href="#garden">Garden</a></li>
+                <li><a href="#stp">STP Maintenance</a></li>
+                <li><a href="#pest">Pest Control</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="{{ url_for('home') }}#about">About Us</a></li>
+                <li><a href="{{ url_for('home') }}#testimonials">Testimonials</a></li>
+                <li><a href="{{ url_for('home') }}#gallery">Gallery</a></li>
+                <li><a href="{{ url_for('home') }}#team">Our Team</a></li>
+                <li><a href="{{ url_for('home') }}#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+919663261788">+91 96632 61788</a></li>
+                <li><a href="mailto:servicestrimurtifacility@gmail.com">servicestrimurtifacility@gmail.com</a></li>
+                <li><a href="#">Bengaluru, Karnataka</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Trimurti Facility Services. All rights reserved.</p>
+    </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919663261788" target="_blank" title="Chat on WhatsApp">💬</a>
+
+</body>
+</html>
