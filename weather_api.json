@@ -1,9 +1,0 @@
-{
-  "name": "weather_api",
-  "description": "Provides real-time weather information for a given location, such as Bangalore.",
-  "code": "import sys\nimport time\nsys.stdout.reconfigure(encoding='utf-8')\nimport requests\nimport rich\n\ndef get_weather(api_key, city):\n    base_url = f\"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric\"\n    response = requests.get(base_url)\n    weather_data = response.json()\n    return weather_data\n\ndef main():\n    api_key = \"YOUR_OPENWEATHERMAP_API_KEY\"\n    city = \"Bangalore\"\n    try:\n        weather_data = get_weather(api_key, city)\n        print(f\"Weather in {city}:\")\n        print(f\"Description: {weather_data['weather'][0]['description']}\")\n        print(f\"Temperature: {weather_data['main']['temp']}\u00b0C\")\n        print(f\"Humidity: {weather_data['main']['humidity']}%\")\n        print(f\"Wind Speed: {weather_data['wind']['speed']} m/s\")\n    except Exception as e:\n        print(f\"Error: {e}\")\n\nif __name__ == \"__main__\":\n    main()\n    time.sleep(1)",
-  "success_rate": 1.0,
-  "created": "2026-03-22T06:11:24.406225",
-  "uses": 0,
-  "fails": 0
-}
